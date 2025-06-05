@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design With Henry</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #0077b6, #90e0ef);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        .text {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .whole {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            float: left;
+            margin: 0 auto;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .caption {
+            margin-top: 10px;
+            color: white;
+        }
+
+        /* no underline on text links */
+        a {
+            text-decoration: none;
+        }
+
+        /* my button */
+        .my-button {
+            margin: 1em;
+            background-color: white;
+            border: 2px solid;
+            border-radius: 20px;
+            padding: 1em;
+            width: 400px;
+            box-shadow: 8px 8px 6px 1px rgba(239, 213, 153, 0.2);
+            text-decoration: none;
+            /* Remove underline from text */
+        }
+
+        .my-button:hover {
+            background-color: rgb(255, 189, 46);
+            color: black;
+            box-shadow: 7px 7px 6px 1px rgba(250, 164, 66, 0.2);
+            cursor: pointer;
+            padding: 1.1em;
+
+        }
+
+        .my-button:active {
+            background-color: white;
+            color: black;
+            padding: 0.9em;
+        }
+
+        .my-button img {
+            width: 60px;
+            height: 60px;
+            border-radius: 30%;
+        }
+
+        .henry {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* add a bounce to the hover */
+        .henry {
+            transition: transform 0.15s cubic-bezier(0, 0.1, 0.6, 4) 0s;
+        }
+
+        .henry:hover {
+            transform: scale(1.02);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            transition: transform 0.2s ease-in-out;
+            /* Add a transition for the transform property */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            /* Scale the icon on hover */
+        }
+
+        .quote ul {
+            text-align: center;
+            list-style: none;
+            /* Remove default list styles */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        .quote>ul li {
+            display: inline-block;
+            border: 1px white solid;
+            padding: 0.5em;
+            font-size: 20px;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        h2 {
+            display: none;
+        }
+
+        p {
+            margin: 1px;
+            /* Adjust the outer spacing */
+            padding: 5px;
+            /* Adjust the inner spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Nothing special here</h2>
+    </header>
+    <main>
+        <section>
+            <br>
+            <div class="whole">
+                <div class="avatar">
+                    <img src="media/avatar.jpg" alt="Avatar">
+                </div>
+
+
+                <div class="caption">
+                    <h1>@designwithhenry</h1>
+
+                </div>
+            </div>
+            <div class="quote">
+                <ul>
+                    <li>GO BIG with me or go home!</li>
+                </ul>
+            </div>
+            <br>
+        </section>
+
+        <section>
+            <h2>Want to discover more?</h2>
+            <a href="https://www.facebook.com/designwithhenry" target="_blank">
+                <div class="my-button henry">
+                    <img src="media/a1.png" alt="Design with Henry">
+                    <div class="text">Design with Henry</div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/duong._.gia/" target="_blank">
+                <div class="my-button henry">
+                    <img src="media/a2.png" alt="Photography and Mood Swings">
+                    <div class="text">Photography and Mood Swings</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/@duongtranngoc227" target="_blank">
+                <div class="my-button henry">
+                    <img src="media/a3.png" alt="Videos and Funny Moments">
+                    <div class="text">Videos and Funny Moments</div>
+                </div>
+            </a>
+            <a href="https://twitter.com/Duong227" target="_blank">
+                <div class="my-button henry">
+                    <img src="media/a4.png" alt="Coffee and Comedy">
+                    <div class="text">Coffee and Comedy</div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/henrytran227/" target="_blank">
+                <div class="my-button henry">
+                    <img src="media/questionbox.jpg" alt="People and Meetings">
+                    <div class="text">People and Meetings</div>
+                </div>
+            </a>
+            <a href="https://spotify.link/i7384QiR1Db" target="_blank">
+                <div class="my-button henry">
+                    <img src="media/a5.png" alt="Shuffle and Dance">
+                    <div class="text">Shuffle and Dance</div>
+                </div>
+            </a>
+            <br>
+        </section>
+
+
+    </main>
+    <footer>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/designwithhenry" target="_blank">
+                <img src="media/facebook.png" alt="Facebook" style="width:40px; height:40px;">
+            </a>
+            <a href="https://www.instagram.com/duong._.gia/" target="_blank">
+                <img src="media/instagram.png" alt="Instagram" style="width:40px; height:40px;">
+            </a>
+            <a href="https://www.youtube.com/@duongtranngoc227" target="_blank">
+                <img src="media/youtube.png" alt="Youtube" style="width:40px; height:40px;">
+            </a>
+            <a href="https://twitter.com/Duong227" target="_blank">
+                <img src="media/twitter.png" alt="Twitter" style="width:40px; height:40px;">
+            </a>
+            <a href="https://www.linkedin.com/in/henrytran227/" target="_blank">
+                <img src="media/linkedin.png" alt="LinkedIn" style="width:40px; height:40px;">
+            </a>
+            <a href="https://spotify.link/i7384QiR1Db" target="_blank">
+                <img src="media/spotify.png" alt="Spotify" style="width:40px; height:40px;">
+            </a>
+
+        </div>
+        <br>
+        <p><span style="font-size:small;">Images credit: Avatar by me | Guess What from Amazon | All social icons from
+                Freepik</span></p>
+        <p><span style="font-size:small;">Images in button "Design with Henry", "Photography and Mood Swings", "Videos
+                and Funny Moments", "Coffee and Comedy", "People and Meetings", "Shuffle and Dance" created by Adobe
+                Express</span></p>
+        <nav style="text-align: center;">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
